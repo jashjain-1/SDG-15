@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forest Conservation Fundraiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Plant a Tree. Protect a Future.</h1>
+    <p>Your contribution fuels global reforestation and ecological recovery.</p>
+</header>
+
+<nav>
+   <a href="index.html">Home</a>
+    <a href="efforts.html">Global Efforts</a>
+    <a href="miyawaki.html">Miyawaki Forests</a>
+    <a href="shopping.html">Shopping</a>
+    <a href="fundraiser.html">Fundraiser</a>
+</nav>
+<section>
+    <h2>Why Donate?</h2>
+    <p>
+        Every ¹50 enables the planting and nurturing of a tree. Your support strengthens ecosystems,
+        improves soil health, enhances biodiversity, and creates sustainable livelihoods for local communities.
+    </p>
+
+    <img src="reforestation.jpg" alt="Sapling being planted">
+
+    <h3>Donate Now</h3>
+    <p>Every contribution creates measurable environmental impact.</p>
+
+    <form action="thankyou.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amount">Donation Amount (¹):</label>
+        <input type="number" id="amount" name="amount" min="50" step="50" oninput="calculateTrees()" required>
+
+        <label for="treeCount">Tree Count (Auto-Calculated):</label>
+        <input type="text" id="treeCount" placeholder="1 tree per ¹50" disabled>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+
+        <input type="submit" value="Contribute Now">
+    </form>
+</section>
+
+<footer>
+    <p>Made by Karan, Jash, Ridham, and Vivan</p>
+</footer>
+
+<script src="donationcalculator.js"></script>
+</body>
+</html>
+
+
